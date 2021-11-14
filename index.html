@@ -1,43 +1,49 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-    <meta charset="utf-8"
-	<title> Calculator</title>
-	<link rel="stylesheet" href="stylesheet.css">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculator</title>
+    <link rel="stylesheet" href="stylesheet.css">
+    <link rel="script" href="script.js">
 </head>
 <body>
-	<div class="calculator"
-            <input type="text" class="calculator-screen" value="0" disabled />
-            <div class="calculator-keys">
-                <div class="row">
-                    <button class="all-clear">AC</button>
-                    <button class="percentage">%</button>
-                    <button class="operator">&divide;</button>
-                </div>
-                <div class="row">
-                    <button class="number" value="7">7</button>
-                    <button class="number" value="8">8</button>
-                    <button class="number" value="9">9</button>
-                    <button class="operator" value="*">&times;</button>
-                </div>
-                <div class="row">
-                    <button class="number" value="4">4</button>
-                    <button class="number" value="5">5</button>
-                    <button class="number" value="6">6</button>
-                    <button class="operator" value="-">-</button>
-                </div>
-                <div class="row">
-                    <button class="number" value="1">1</button>
-                    <button class="number" value="2">2</button>
-                    <button class="number" value="3">3</button>
-                    <button class="operator" value="+">+</button>
-                </div>
-                <div class="row">
-                    <button class="number zero-btn"value="0">0</button>
-                    <button class="decimal"value=".">.</button>
-                    <button class="equal-sign">=</button>    
-                </div>
-            </div>
-        </div>
-    </body>
-</html>
+    <div class="judul">
+        <h1>CALCULATE</h1>
+    </div>
+
+       <div class="container">
+           <div class="calculator">
+               <input type="text" placeholder="0" id="output-screen">
+               <button onclick="bersihin()">Cl</button>
+               <button onclick="del()">Del</button>
+               <button onclick="display('%')">%</button>
+               <button onclick="display('/')">/</button>
+               <button onclick="display('7')">7</button>
+               <button onclick="display('8')">8</button>
+               <button onclick="display('9')">9</button>
+               <button onclick="display('*')">*</button>
+               <button onclick="display('4')">4</button>
+               <button onclick="display('5')">5</button>
+               <button onclick="display('6')">6</button>
+               <button onclick="display('_')">_</button>
+               <button onclick="display('1')">1</button>
+               <button onclick="display('2')">2</button>
+               <button onclick="display('3')">3</button>
+               <button onclick="display('+')">+</button>
+               <button onclick="display('-')">-</button>
+               <button onclick="display('0')">0</button>
+               <button onclick="calculator()" class="hasil">=</button>
+
+           </div>
+       </div>
+       <script src="script.js"></script>
+</body>
+<footer>
+    <div class="footer">
+        <h1>EINSTAIN SAMUEL</h1>
+        <h1>Studi Independen Kampus Merdeka ~ PT. Progate Indonesia</h1>
+    </div>
+</footer>
+</html> 
